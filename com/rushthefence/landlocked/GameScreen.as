@@ -25,11 +25,11 @@ package com.rushthefence.landlocked
 			mBlockMap = new BlockMap(tilesWide, tilesHigh, blockmapOffsetX, blockmapOffsetY);
 			
 			mRotateCW = new RotateCW(mBlockMap);
-			mRotateCW.x = 525;
-			mRotateCW.y = 412;
+			mRotateCW.x = blockmapOffsetX+(35*tilesWide);
+			mRotateCW.y = blockmapOffsetY+(30*tilesHigh)-30;
 			mRotateACW = new RotateACW(mBlockMap);
-			mRotateACW.x = 140;
-			mRotateACW.y = 412;
+			mRotateACW.x = blockmapOffsetX-35;
+			mRotateACW.y = blockmapOffsetY+(30*tilesHigh)-30;
 		}
 		
 		override public function render():void
@@ -64,6 +64,10 @@ package com.rushthefence.landlocked
 			if (Input.released(Key.D))
 			{
 				mBlockMap.rotateView(-1);
+			}
+			if (Input.released(Key.P))
+			{
+				trace(mBlockMap.mapToString());
 			}
 		}
 		

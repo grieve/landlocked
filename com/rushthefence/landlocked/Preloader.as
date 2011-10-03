@@ -26,7 +26,7 @@ package com.rushthefence.landlocked
 			loaderInfo.addEventListener(ProgressEvent.PROGRESS, progress);
 			loaderInfo.addEventListener(IOErrorEvent.IO_ERROR, ioError);
 			
-			MochiAd.showPreGameAd({id:"40277a874cbfb1a3", res:"700x500",clip:this, background:0xBFE7EE, color:0x2200FF, outline:0x080707, no_bg:true});
+			//MochiAd.showPreGameAd({id:"40277a874cbfb1a3", res:"700x500",clip:this, background:0xBFE7EE, color:0x2200FF, outline:0x080707, no_bg:true});
 		}
 		
 		private function ioError(e:IOErrorEvent):void 

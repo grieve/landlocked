@@ -50,6 +50,23 @@ package com.rushthefence.landlocked
 			moveBy(ox,oy);
 		}
 		
+		public function mapToString():String
+		{
+			var output:String = mTilesWide + "." + mTilesHigh + ".";
+			for (var tx:Number = 0; tx < mTilesWide; tx++)
+			{
+				for (var ty:Number = 0; ty < mTilesHigh; ty++)
+				{
+					for (var tz:Number = 0; tz < mInternalMap[tx][ty].length; tz++)
+					{
+						output += Utils.getNumberAsHexString(mInternalMap[tx][ty][tz].block_type, 3, false);
+					}
+					output += ".";
+				}
+			}
+			return output;
+		}
+		
 		public function setBlockController(blockController:BlockController)
 		{
 			mBlockController = blockController;

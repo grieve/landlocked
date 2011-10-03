@@ -15,7 +15,7 @@ package com.rushthefence.landlocked
 		
 		public function CreateGame(tilesWide:Number, tilesHigh:Number) 
 		{
-			super(tilesWide, tilesHigh);
+			super(tilesWide, tilesHigh, 210);
 			mBlockController = new BlockToolbox(false, 100);
 			mBlockMap.setBlockController(mBlockController);
 			while (newBlocks < 120)

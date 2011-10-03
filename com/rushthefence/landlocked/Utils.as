@@ -82,6 +82,16 @@ package com.rushthefence.landlocked
 					break;
 			}
 		}
+		public static function getNumberAsHexString(number:uint, minimumLength:uint = 1, showHexDenotation:Boolean = true):String
+		{
+			var string:String = number.toString(16).toUpperCase();
+			while (minimumLength > string.length)
+			{
+					string = "0" + string;
+			}
+			if (showHexDenotation) { string = "0x" + string; }
+			return string;
+        }
 	}
 
 }
