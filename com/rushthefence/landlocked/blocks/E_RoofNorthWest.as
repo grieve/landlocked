@@ -1,4 +1,4 @@
-package com.rushthefence.landlocked 
+package com.rushthefence.landlocked.blocks 
 {
 	/**
 	 * ...
@@ -7,6 +7,7 @@ package com.rushthefence.landlocked
 	
 	import net.flashpunk.Entity;
 	import net.flashpunk.graphics.Image;
+	import com.rushthefence.landlocked.CuteAssets;
 	 
 	public class E_RoofNorthWest extends Block
 	{		

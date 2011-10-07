@@ -1,5 +1,6 @@
 package com.rushthefence.landlocked 
 {
+	import com.rushthefence.landlocked.blocks.Block;
 	import net.flashpunk.Entity;
 	/**
 	 * ...

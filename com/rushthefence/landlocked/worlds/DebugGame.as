@@ -1,4 +1,4 @@
-package com.rushthefence.landlocked 
+package com.rushthefence.landlocked.worlds 
 {
 	/**
 	 * ...

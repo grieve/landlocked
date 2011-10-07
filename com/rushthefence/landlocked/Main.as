@@ -1,5 +1,6 @@
 package com.rushthefence.landlocked
 {
+	import com.rushthefence.landlocked.worlds.CreateGame;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import net.flashpunk.Engine;

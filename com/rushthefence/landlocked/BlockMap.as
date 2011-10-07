@@ -1,6 +1,6 @@
 package com.rushthefence.landlocked 
 {
-	import com.rushthefence.landlocked.Block;
+	import com.rushthefence.landlocked.blocks.Block;
 	import flash.geom.ColorTransform;
 	import net.flashpunk.Entity;
 	import net.flashpunk.FP;
@@ -17,8 +17,8 @@ package com.rushthefence.landlocked
 	{
 		public var mInternalMap:Array;
 		public var mTransmap:Array;
-		private var mTilesWide = 0;
-		private var mTilesHigh = 0;
+		private var mTilesWide:Number = 0;
+		private var mTilesHigh:Number = 0;
 		
 		private var mBlockController:BlockController;
 		private var mCursor:Cursor = new Cursor();
@@ -67,17 +67,17 @@ package com.rushthefence.landlocked
 			return output;
 		}
 		
-		public function setBlockController(blockController:BlockController)
+		public function setBlockController(blockController:BlockController):void
 		{
 			mBlockController = blockController;
 		}
 		
-		public function setMode(mode:String)
+		public function setMode(mode:String):void
 		{
 			mMode = mode;
 		}
 		
-		public function pushBlock(bl:Block, x:int, y:int)
+		public function pushBlock(bl:Block, x:int, y:int):void
 		{
 			if (!bl)
 				return;
@@ -204,7 +204,7 @@ package com.rushthefence.landlocked
 			}
 		}
 		
-		public function isEmpty(x:int, y:int)
+		public function isEmpty(x:int, y:int):Boolean
 		{
 			return mInternalMap[x][y].length == 0;
 		}
@@ -442,9 +442,9 @@ package com.rushthefence.landlocked
 					break;
 			}
 			
-			for (var ix:Number = 0; ix < mTilesHigh; ix ++)
+			for (ix = 0; ix < mTilesHigh; ix ++)
 			{
-				for (var iy:Number = 0; iy < mTilesWide; iy ++)
+				for (iy = 0; iy < mTilesWide; iy ++)
 				{
 					regenerateLocalShadows(ix, iy, false);
 				}

@@ -1,4 +1,4 @@
-package com.rushthefence.landlocked 
+package com.rushthefence.landlocked.blocks 
 {
 	import flash.display.Graphics;
 	import flash.geom.Point;

@@ -1,5 +1,6 @@
 package com.rushthefence.landlocked 
 {
+	import com.rushthefence.landlocked.blocks.Block;
 	import net.flashpunk.graphics.Image;
 	import net.flashpunk.graphics.Text;
 	import net.flashpunk.graphics.Spritemap;

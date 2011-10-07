@@ -1,5 +1,8 @@
-package com.rushthefence.landlocked 
+package com.rushthefence.landlocked.worlds 
 {
+	import com.rushthefence.landlocked.blocks.Block;
+	import com.rushthefence.landlocked.BlockToolbox;
+	import com.rushthefence.landlocked.Utils;
 	import net.flashpunk.graphics.Text;
 	import net.flashpunk.utils.Input;
 	import net.flashpunk.utils.Key;
